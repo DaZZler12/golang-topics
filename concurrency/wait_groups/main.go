@@ -25,7 +25,7 @@ func main() {
 		go Process(wg, counter)
 		counter--
 	}
-	wg.Wait() // this will be blocked until the counter becomes 0, i.e. All the go-routines ends
+	wg.Wait() // this will be blocked until the counter becomes 0, i.e. All the child go-routines ends
 	fmt.Println("terminating main routine")
 
 }
