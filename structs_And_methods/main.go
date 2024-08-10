@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"structs_And_methods/methods"
+)
 
 type Employee struct {
 	name string
@@ -95,6 +98,18 @@ func main() {
 	}
 
 	fmt.Println("Compering pp1 and pp2: ", pp1 == pp2)
+
+	/*
+		Codes for Methods
+	*/
+
+	fmt.Printf("\n\nCodes for Methods.......\n\n")
+	methods.Helper()
+
+	fmt.Printf("\n\nPrcoess Shape and get the Area of Circle and Rectangle...........\n\n\n")
+	methods.ProcessShape()
+
+	methods.ProcessNonStruct()
 
 }
 
